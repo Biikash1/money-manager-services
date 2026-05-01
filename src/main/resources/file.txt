@@ -1,11 +1,13 @@
 BREVO_USERNAME=a70bec001@smtp-brevo.com;
- BREVO_PASSWORD=xsmtpsib-7d14af85c0ea8d78f040f775402498e02c2e5c05318c4e4288c0bff8950fd311-tHJsBT6lBqVwAitv
+ BREVO_PASSWORD=xsmtpsib-7d14af85c0ea8d78f040f775402498e02c2e5c05318c4e4288c0bff8950fd311-c9zqLzt5hpXZ0Zp7
  DB_URL="jdbc:postgresql://dpg-d7gu7vm7r5hc73drgg3g-a.singapore-postgres.render.com/moneymanger_k9tm" DB_USER="moneymanger_k9tm_user" DB_PASS="Pn2NBQhPUI3glZaDBQZFsd4cnFWz2uuu" BRAVO_USER=a70bec001@smtp-brevo.com;BRAVO_PASS=xsmtpsib-7d14af85c0ea8d78f040f775402498e02c2e5c05318c4e4288c0bff8950fd311-tHJsBT6lBqVwAitv;
  BRAVO_SEND_EMAIL=anuragmondal475@gmail.com;MONEY_MANAGER_BACKEND_URL=http://localhost:8080;MONEY_MANAGER_FRONTEND_URL=http://localhost:5713
 
 $env:DB_URL="jdbc:postgresql://dpg-d7gu7vm7r5hc73drgg3g-a.singapore-postgres.render.com/moneymanger_k9tm"
 $env:DB_USER="moneymanger_k9tm_user"
 $env:DB_PASS="Pn2NBQhPUI3glZaDBQZFsd4cnFWz2uuu"
+
+SMTP_KEY = xsmtpsib-7d14af85c0ea8d78f040f775402498e02c2e5c05318c4e4288c0bff8950fd311-c9zqLzt5hpXZ0Zp7
 
 DB_URL=jdbc:postgresql://dpg-d7gu7vm7r5hc73drgg3g-a.singapore-postgres.render.com/moneymanger_k9tm;DB_USER=moneymanger_k9tm_user;DB_PASS=Pn2NBQhPUI3glZaDBQZFsd4cnFWz2uuu;
 
