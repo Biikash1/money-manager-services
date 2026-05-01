@@ -35,11 +35,19 @@ public class ProfileService {
         ProfileEntity newProfile = toEntity(profileDTO);
         newProfile.setActivationToken(UUID.randomUUID().toString());
         newProfile = profileRepository.save(newProfile);
+
         //Send Activation Email
         String activationLink = activationUrl + "/api/activate?token=" + newProfile.getActivationToken();
         String subject = "Activate your Money Manager Account";
         String body = "Click on the following link to activate your account: " + activationLink;
-        emailService.sendEmail(newProfile.getEmail(), subject, body);
+        try {
+            emailService.sendEmail(newProfile.getEmail(), subject, body);
+        } catch (Exception e) {
+            // Log the error so you can see it in Render logs
+            System.err.println("CRITICAL: User saved but email failed: " + e.getMessage());
+            // DO NOT re-throw the exception here
+        }
+
         return toDTO(newProfile);
     }
 
